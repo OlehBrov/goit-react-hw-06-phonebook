@@ -30,7 +30,7 @@ export function ContactList() {
               id={contact.id}
             ></ContactItem>
           ))
-        : 'Loading'}
+        : 'Add contacts to phonebook and they will appear here!'}
     </List>
   );
 }
