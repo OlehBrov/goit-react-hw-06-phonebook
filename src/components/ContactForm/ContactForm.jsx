@@ -1,5 +1,5 @@
 import { Formik, Form, ErrorMessage } from 'formik';
-import * as yup from 'yup';
+// import * as yup from 'yup';
 import { useState } from 'react';
 import { Input } from 'components/Filter/Filter';
 import styled from 'styled-components';
@@ -25,15 +25,15 @@ export const ContactForm = ({ addContact }) => {
     if (name === 'name') setName(value);
     if (name === 'number') setNumber(value);
   };
-  const advancedSchema = yup.object().shape({
-  name: yup
-    .string()
-    .min(3, "Username must be at least 3 characters long")
-    .required("Is Required"),
-  number: yup
-    .string()
-    .required("Required"),
-});
+//   const advancedSchema = yup.object().shape({
+//   name: yup
+//     .string()
+//     .min(3, "Username must be at least 3 characters long")
+//     .required("Is Required"),
+//   number: yup
+//     .string()
+//     .required("Required"),
+// });
 
   return (
     <Formik
