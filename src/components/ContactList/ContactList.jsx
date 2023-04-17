@@ -9,7 +9,6 @@ export function ContactList() {
   const dispatch = useDispatch();
 
   const contactsToRender = (contacts, searchQuery) => {
-    console.log('contactsToRender contacts', contacts);
     if (searchQuery === '') {
       return contacts;
     } else {
