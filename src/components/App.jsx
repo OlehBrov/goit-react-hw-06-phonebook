@@ -3,7 +3,7 @@ import { ContactList } from './ContactList/ContactList';
 import { Filter } from './Filter/Filter';
 import { PhonebookStyled } from './App.styled';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from './redux/ContactsSlices';
+import { addContact } from '../redux/ContactsSlices';
 
 export const App = () => {
   const contacts = useSelector(state => state.contacts.contactList);

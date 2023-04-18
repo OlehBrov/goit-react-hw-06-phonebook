@@ -2,7 +2,7 @@ import { Formik, Field } from 'formik';
 import styled from 'styled-components';
 import { FilterStyled } from './Filter.styled';
 import { useDispatch, useSelector } from 'react-redux';
-import { setFilter } from 'components/redux/FilterSlices';
+import { setFilter } from 'redux/FilterSlices';
 
 export function Filter() {
   const filterValue = useSelector(state => state.filter);
